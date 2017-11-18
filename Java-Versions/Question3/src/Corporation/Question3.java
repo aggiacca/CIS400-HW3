@@ -1,4 +1,14 @@
-public class Question2 {
+
+/*
+    Question 3
+    Java
+    Ada Giaccaglia
+
+ */
+
+
+package Corporation;
+public class Question3 {
     public static void main( String[] args ) {
         Bank bank1 = new Bank();
         Manager boss = new Manager();
@@ -10,6 +20,10 @@ class Bank
 {
     private String name;
     protected String securityInfo;
+    //so securityInfo is not null
+    Bank(){
+        securityInfo = "High";
+    }
     public void display(){
         System.out.println("This is a bank!");
     }

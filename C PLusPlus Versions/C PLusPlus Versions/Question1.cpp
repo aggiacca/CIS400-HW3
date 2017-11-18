@@ -1,6 +1,14 @@
 // C PLusPlus Versions.cpp : Defines the entry point for the console application.
 //
 
+
+/*
+
+	Question 1 
+	C++
+	Adam Giaccaglia
+
+*/
 #include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -55,8 +63,6 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	//pointer for dyanmic binding and allocation
 	Animal* animals[4];
-
-	//Animal* cow = new Cow();
 
 	animals[0] = new Animal();
 	animals[1] = new Cow();

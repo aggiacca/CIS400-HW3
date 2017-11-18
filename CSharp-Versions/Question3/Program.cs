@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/*
+ * Question3
+ * C#
+ * Adam Giaccaglia
+ */
+
 namespace Question3
 {
     class Program
@@ -13,6 +20,10 @@ namespace Question3
         {
             private string name;
             protected internal string securityInfo;
+            public Bank()
+            {
+                securityInfo = "High";
+            }
             public void display(){
                 Console.WriteLine("This is a bank!");
             }

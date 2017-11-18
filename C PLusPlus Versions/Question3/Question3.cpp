@@ -1,6 +1,12 @@
 // Question3.cpp : Defines the entry point for the console application.
 //
+/*
 
+	Question3
+	C++
+	Adam Giaccaglia
+
+*/
 #include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -9,11 +15,15 @@ using namespace std;
 
 class Bank
 {
+	friend class Manager;
 	private:
 		string name;
 	protected:
 		string securityInfo;
 	public: 
+		Bank(){
+			securityInfo = "High";
+		}
 		void display(){
 			cout <<("This is a bank!");
 		}
@@ -22,6 +32,7 @@ class Bank
 
 class Manager
 {
+	
 private:
 	int id;
 public:
@@ -29,7 +40,7 @@ public:
 	{
 		cout <<("I am a manager!");
 	}
-	friend void Bank::securityAccess(Bank x){
+	void securityAccess(Bank x){
 		cout <<("Security Information is: " + x.securityInfo);
 	}
 };
